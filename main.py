@@ -16,7 +16,8 @@ def calcul(opcio: int):
     elif(opcio == 2):
         temp_cl = game.ask_for_number("Fica la temperatura en Centígrads")
         game.show_long_text(calc_fahren(temp_cl), DialogLayout.BOTTOM)
-    
+    else:
+        game.show_long_text("Has de seleccionar 1 o 2", DialogLayout.BOTTOM)
 while opt_usuari != 0: 
     opt_usuari = game.ask_for_number("1 -> celsius 2 -> fahrenheit 0 -> sortir")
     scene.set_background_image(img("""

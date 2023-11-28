@@ -20,6 +20,8 @@ function calcul(opcio: number) {
     } else if (opcio == 2) {
         temp_cl = game.askForNumber("Fica la temperatura en Centígrads")
         game.showLongText(calc_fahren(temp_cl), DialogLayout.Bottom)
+    } else {
+        game.showLongText("Has de seleccionar 1 o 2", DialogLayout.Bottom)
     }
     
 }
